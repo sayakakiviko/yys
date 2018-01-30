@@ -1,0 +1,41 @@
+/*底部*/
+#foot {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.foot-wrap {
+    margin: auto;
+    width: 840px;
+}
+
+.foot-logo {
+    height: 48px;
+}
+
+.foot-nav {
+    width: 480px;
+    height: 48px;
+    color: #666;
+}
+
+.foot-nav p {
+    margin-top: 5px;
+    line-height: 26px;
+}
+
+.jianhu {
+    width: 142px;
+    line-height: 26px;
+    background-color: #610000;
+    text-align: center;
+    color: #fff;
+}
+
+.foot-info p {
+    margin: 5px auto;
+}
+
+#foot a:hover {
+    text-decoration: underline;
+}

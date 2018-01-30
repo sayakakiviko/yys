@@ -1,0 +1,2039 @@
+body {
+    min-width: 1500px;
+}
+
+.italic-line, .list-qudao li a i, .next, .download-box span, .download-close, .download-phone a, .download-pc, .scan, .side-day, .side-day-con li, .side-day-con a > div, .news-info-tit span, .news-info-tit i, .pingan, .link-line, .hover-bg, .shishen span,
+.zhujue span, .onleft, .onright, .strategy-search-btn, .strategy-nav a span, .strategy-nav a i, .gonglue, .strategy-info-tab a span, .zhujue-info-visible span, .zhujue-info-visible a, .tongren, .tougao, .tongren-tab span, .tongren-con-wrap i, .shiiping-tit,
+.bizhi-tit, .wb-tit, .wx-tit, .server, .back-top, .more-title, .more-con span, .more-con i, .more-con em, .more-code-wrap p {
+    background-image: url("../images/index/index.png");
+}
+
+.list-qudao li a, .list-qudao li a i, .weibo:hover .p-tit-sub, .weixin:hover .p-tit-sub, .qq1 span, .qq2 span, .side-day-con li a, .side-day-con a span, .scan, .ios, .android, .news-info-tit a, .news-info-tit span, .shishen span, .zhujue span, .allgod,
+.shishen-box-all ul a, .shishen-box-all li:hover .shishen-name, .shishen-box-all a i, .zhujue-con-tab a, .strategy-info-tab a span, .strategy-info-wrap span, .strategy-info-wrap em, .zhujue-info-visible span, .zhujue-info-visible a, .tongren-tab a,
+.tongren-con-wrap a, .tongren-con-wrap i, .more-con, .more-con span, .more-con i, .more-con em {
+    display: block;
+}
+
+#main {
+    overflow: hidden;
+    position: relative;
+    background: url("../images/index/bg_top.jpg") no-repeat;
+    min-width: 1500px;
+    min-height: 580px;
+    z-index: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: -50px;
+    z-index: 99;
+    -webkit-transition: all 1s ease-in-out, transform .5s ease-in-out;
+    -moz-transition: all 1s ease-in-out, transform .5s ease-in-out;
+    -ms-transition: all 1s ease-in-out, transform .5s ease-in-out;
+    -o-transition: all 1s ease-in-out, transform .5s ease-in-out;
+    transition: all 1s ease-in-out, transform .5s ease-in-out;
+}
+
+/*顶部CV主角显示区*/
+.main-banner {
+    position: relative;
+    width: 100%;
+    height: 520px;
+}
+
+.pic-con {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    margin-left: -600px;
+    width: 1200px;
+    height: 100%;
+}
+
+.pic-box div {
+    position: relative;
+    left: 180px;
+}
+
+.pic-box div:last-child img {
+    opacity: 0;
+}
+
+.pic-box img {
+    position: absolute;
+}
+
+.cv1, .cv2, .cv3, .cv4 {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.cv1 {
+    opacity: 0;
+    top: -15px;
+    left: 130px;
+}
+
+.cv2 {
+    opacity: 0;
+    top: -33px;
+    left: 75px;
+    z-index: 1;
+}
+
+.cv3 {
+    top: 49px;
+    left: 0;
+    z-index: -2;
+}
+
+.cv4 {
+    top: -61px;
+    left: 50px;
+    z-index: -1;
+}
+
+.next {
+    position: absolute;
+    top: 205px;
+    left: 870px;
+    width: 41px;
+    height: 66px;
+    background-position: -1640px -545px;
+}
+
+.next:hover {
+    transform: scale(1.1);
+}
+
+/*青蛙*/
+.ha {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -535px;
+    width: 102px;
+    height: 119px;
+    z-index: 2;
+}
+
+.ha:hover {
+    opacity: .7;
+}
+
+.ha img {
+    width: 100%;
+    height: 100%;
+}
+
+/*下载区域*/
+.download {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    z-index: 2;
+    margin-left: -265px;
+    padding: 10px;
+    width: 532px;
+    height: 113px;
+    background-color: #fccc00;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-transition: margin-left .3s linear;
+    -moz-transition: margin-left .3s linear;
+    -ms-transition: margin-left .3s linear;
+    -o-transition: margin-left .3s linear;
+    transition: margin-left .3s linear;
+}
+
+.download-box span {
+    margin: 0 12px;
+    width: 45px;
+    height: 100px;
+    background-position: -1351px -614px;
+}
+
+.download-close {
+    width: 22px;
+    height: 23px;
+    background-position: -1684px -836px;
+}
+
+/*下载二维码*/
+.download-code {
+    margin-right: 8px;
+    position: relative;
+    padding: 8px;
+    width: 91px;
+    height: 91px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.download-code img {
+    width: 100%;
+}
+
+/*二维码扫描线*/
+.download-code img.line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: scanning 3s linear infinite;
+}
+
+@keyframes scanning {
+    100% {
+        top: 90px;
+    }
+}
+
+.ios, .android {
+    width: 171px;
+    height: 51px;
+    background-repeat: no-repeat;
+}
+
+.ios {
+    background-position: -1174px -1314px;
+}
+
+.android {
+    margin-top: 5px;
+    background-position: -1080px -993px;
+}
+
+.ios:hover {
+    background-position: -907px -978px;
+}
+
+.android:hover {
+    background-position: -1345px -1314px;
+}
+
+.download-pc {
+    position: relative;
+    margin: 0 12px;
+    width: 131px;
+    height: 107px;
+    background-position: -928px -684px;
+    border-radius: 5px;
+}
+
+.download-pcinfo {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -100px;
+    left: -210px;
+    padding: 10px 0 0 15px;
+    width: 335px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.download-pc:hover .download-pcinfo {
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.download-pcinfo p {
+    margin-top: 5px;
+}
+
+.download-hidden {
+    display: none;
+    margin-top: -10px;
+    padding-top: 10px;
+    width: 25px;
+    height: 105px;
+    background-color: #fccc00;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.scan {
+    width: 22px;
+    height: 105px;
+    background-position: -1328px -614px;
+}
+
+/*波浪*/
+.wave {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 91px;
+}
+
+.wave img {
+    position: absolute;
+    width: 1284px;
+    height: 91px;
+}
+
+.wave1 {
+    left: 0;
+    animation: wave-one 6s linear infinite;
+}
+
+@keyframes wave-one {
+    100% {
+        left: -1284px;
+    }
+}
+
+.wave2 {
+    left: 1284px;
+    animation: wave-two 6s linear infinite;
+}
+
+@keyframes wave-two {
+    100% {
+        left: 0;
+    }
+}
+
+.wave3 {
+    left: 2568px;
+    animation: wave-three 6s linear infinite;
+}
+
+@keyframes wave-three {
+    100% {
+        left: 1284px;
+    }
+}
+
+/*游戏日历面板*/
+.main-side {
+    position: absolute;
+    top: 310px;
+    left: 50%;
+    margin-left: 278px;
+    width: 673px;
+    height: 1100px;
+    background: url("../images/index/side_right_qiu.png") no-repeat;
+    z-index: 2;
+}
+
+.youzhishi {
+    position: absolute;
+    top: 130px;
+    border: 5px solid transparent;
+    border-left-color: #fccc00;
+    border-right: none;;
+}
+
+.side-day {
+    position: absolute;
+    top: -18px;
+    left: 25px;
+    width: 321px;
+    height: 168px;
+    background-position: -582px -870px;
+}
+
+.side-day-con {
+    margin-top: 133px;
+    width: 346px;
+}
+
+.side-day-con li {
+    margin-top: -4px;
+}
+
+.side-day-con li a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.side-day-con a span {
+    position: relative;
+    font-size: 13px;
+}
+
+.odd {
+    margin-left: 28px;
+}
+
+.eve {
+    margin-right: 28px;
+}
+
+.side-day-con .odd:hover, .side-day-con li.day4:hover {
+    margin-left: 56px;
+}
+
+.side-day-con .eve:hover {
+    margin-left: 42px;
+}
+
+.day1 {
+    width: 320px;
+    height: 104px;
+    background-position: -660px -1057px;
+}
+
+.day1 .day-title {
+    top: 58px;
+    left: 25px;
+    width: 185px;
+}
+
+/*游戏日历公共样式*/
+.day-open {
+    overflow: hidden; /*必须加上才能实现卷轴拉开效果*/
+    position: absolute;
+    height: 0;
+    z-index: 1;
+}
+
+/*过渡公共样式*/
+.next, .next:hover, .download-pcinfo, .download-pc:hover .download-pcinfo, .odd, .side-day-con .odd:hover, .eve, .side-day-con .eve:hover, li.day4, li.day4:hover, .day-open, .day-key:hover .day-open, .info-new em, .info-new:hover em, .luntan a, .luntan a:hover,
+.tieba a, .tieba a:hover, .news-info-tit li em, .news-info-tit li:hover em, .shishen i, .shishen:hover i, .zhujue i, .zhujue:hover i, .shishen-box-all li:hover .shishen-name, .zhujue-con-tab li, .zhujue-con-tab li:hover, .zhujue-con-tab li span,
+.zhujue-con-tab li:hover span, .strategy-nav a span, .strategy-nav a:hover span, .hover-bg, .strategy-info-tab a:hover .hover-bg, .tongren-tab li span, .tongren-tab li:hover span, .tougao, .tougao:hover, .tongren-tab li i, .tongren-tab li:hover i,
+.tongren-con-wrap li span, .tongren-con-wrap li:hover span, .shitu-wrap a img, .shitu-wrap a:hover img, .activity-con li img, .activity-con li:hover img, .back-top, .back-top:hover, .more-con span, .more-con:hover span, .more-con i, .more-con:hover i,
+.more-code-wrap, .more-con:hover .more-code-wrap, .more-con em, .more-con:hover em {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+/*挑战BOSS*/
+.day2 {
+    width: 324px;
+    height: 92px;
+    background-position: 0 -1314px;
+}
+
+.day-title {
+    top: 45px;
+    left: 165px;
+    width: 150px;
+}
+
+.day2-hover {
+    top: 0;
+    left: 5px;
+    width: 319px;
+    background-position: -313px 0;
+}
+
+.day2:hover .day2-hover {
+    height: 360px;
+}
+
+.day2-hover .day-title {
+    top: 45px;
+    left: 161px;
+    width: 150px;
+}
+
+.day2-hover-show {
+    margin: 65px 0 0 50px;
+    width: 240px;
+}
+
+.day2-hover-show span {
+    margin-top: 10px;
+}
+
+.day2-hover-show i {
+    font-size: 14px;
+    font-style: normal;
+    color: #f95c19;
+}
+
+/*集结之境*/
+.day3 {
+    width: 307px;
+    height: 94px;
+    background-position: -1400px -99px;
+}
+
+.day3 .day-title {
+    top: 45px;
+    left: 25px;
+    width: 185px;
+}
+
+.day3-hover {
+    top: 8px;
+    left: 0;
+    width: 307px;
+    background-position: -327px -691px;
+}
+
+.day3:hover .day3-hover {
+    height: 176px;
+}
+
+.day3-hover .day-title {
+    top: 37px;
+    left: 25px;
+    width: 185px;
+}
+
+.day3-hover-show {
+    margin: 70px 0 0 30px;
+    width: 240px;
+}
+
+/*式神委派*/
+.day4 {
+    margin-left: 28px;
+    width: 294px;
+    height: 97px;
+    background-position: -302px -1210px;
+}
+
+.day4 .day-title {
+    top: 48px;
+    left: 133px;
+    width: 145px;
+}
+
+.day4-hover {
+    top: 8px;
+    left: -1px;
+    width: 294px;
+    background-position: -634px -691px;
+}
+
+.day4:hover .day4-hover {
+    height: 176px;
+}
+
+.day4-hover .day-title {
+    top: 40px;
+    left: 134px;
+    width: 145px;
+}
+
+.day4-hover-show {
+    margin: 70px 0 0 30px;
+    width: 240px;
+}
+
+/*御魂副本*/
+.day5 {
+    margin-left: 28px;
+    width: 319px;
+    height: 105px;
+    background-position: -330px -1057px;
+}
+
+.day5 .day-title {
+    top: 60px;
+    left: 14px;
+    width: 235px
+}
+
+.day5-hover {
+    top: 13px;
+    left: -1px;
+    width: 320px;
+    background-position: -209px -377px;
+}
+
+.day5:hover .day5-hover {
+    height: 286px;
+}
+
+.day5-hover .day-title {
+    top: 47px;
+    width: 235px;
+}
+
+.day5-hover-show {
+    margin: 70px 0 0 30px;
+    width: 250px;
+}
+
+.day5-hover-show span {
+    margin-top: 10px;
+}
+
+/*挑战副本*/
+.day6 {
+    margin-left: 13px;
+    width: 308px;
+    height: 97px;
+    background-position: -1400px 0;
+}
+
+.day6 .day-title {
+    top: 62px;
+    left: 145px;
+    width: 145px;
+}
+
+.day6-hover {
+    top: 8px;
+    width: 311px;
+    background-position: 0 -9px;
+}
+
+.day6:hover .day6-hover {
+    height: 356px;
+}
+
+.day6-hover .day-title {
+    top: 54px;
+    left: 146px;
+    width: 145px;
+}
+
+.day7 {
+    width: 309px;
+    height: 104px;
+    background-position: -1080px -882px;
+}
+
+.day7 .day-title {
+    top: 54px;
+    left: 22px;
+    width: 165px;
+}
+
+.day8 {
+    width: 312px;
+    height: 93px;
+    background-position: -595px -1210px;
+}
+
+.day8 .day-title {
+    top: 46px;
+    left: 109px;
+    width: 200px;
+}
+
+.day9 {
+    width: 312px;
+    height: 94px;
+    background-position: -906px -1210px;
+}
+
+.day9 .day-title {
+    top: 58px;
+    left: 25px;
+    width: 150px;
+}
+
+/*新闻资讯*/
+.main-news {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 49px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.news-wrap {
+    position: relative;
+    z-index: 1;
+    margin-left: 260px;
+    padding: 30px 0;
+    width: 1200px;
+}
+
+/*轮播图*/
+.news-banner {
+    overflow: hidden;
+    position: relative;
+    width: 360px;
+    height: 270px;
+}
+
+.news-banner-pic {
+    width: 1800px;
+    transition: 0.5s;
+}
+
+.news-banner-pic div {
+    float: left;
+}
+
+.news-banner-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -70px;
+    width: 140px;
+}
+
+.news-banner-btn a {
+    display: inline-block;
+    margin-left: 6px;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #e37b63;
+    border-radius: 50%;
+}
+
+.news-banner-btn a:hover {
+    background-color: #e37b63;
+}
+
+/*轮播按钮悬浮样式*/
+.news-on {
+    background-color: #e37b63;
+}
+
+/*资讯栏*/
+.news-info {
+    margin-left: 40px;
+    width: 500px;
+    height: 270px;
+}
+
+/*资讯分类名*/
+.news-info-tit {
+    padding-bottom: 18px;
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+
+.news-info-tit li {
+    float: left;
+    position: relative;
+    margin-right: 25px;
+}
+
+.news-info-tit span {
+    margin: 0 15px;
+    width: 44px;
+    height: 30px;
+}
+
+.news-info-tit em {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 15px;
+    width: 74px;
+    height: 33px;
+    border-radius: 20px;
+    background: #68d7fc;
+    z-index: -1;
+}
+
+/*@keyframes bg {
+    100% {
+        top: 5px;
+        opacity: 1;
+        filter:alpha(opacity=100);
+    }
+}*/
+
+.news-info-tit i {
+    position: absolute;
+    top: 6px;
+    right: -18px;
+    width: 17px;
+    height: 30px;
+    background-position: -1688px -197px;
+}
+
+.info-new span {
+    background-position: -1640px -835px;
+}
+
+.info-news span {
+    background-position: -1640px -1218px;
+}
+
+.info-notice span {
+    background-position: -690px -395px;
+}
+
+.info-activity span {
+    background-position: -692px -425px;
+}
+
+.info-media span {
+    background-position: -692px -365px;
+}
+
+.news-info-tit em.on {
+    top: 5px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+/*资讯内容*/
+.news-info-visible {
+    overflow: hidden;
+    margin-top: 2px;
+    width: 500px;
+    border-top: 1px solid #000;
+}
+
+.news-info-wrap {
+    width: 2500px;
+    transition: .5s;
+}
+
+.news-info-wrap ul {
+    float: left;
+    width: 500px;
+}
+
+.news-info-wrap li {
+    padding: 3px 0;
+    width: 100%;
+    border-bottom: 1px dotted #999;
+}
+
+.news-info-wrap li a {
+    display: inline-block;
+    width: 80%;
+    line-height: 2.5em;
+    font-size: 14px;
+    color: #666;
+}
+
+.news-info-wrap li span {
+    float: right;
+    font-size: 12px;
+    line-height: 3em;
+    color: #ccc;
+}
+
+.recommend {
+    background-color: #fefbd2;
+}
+
+.recommend a {
+    padding-left: 60px;
+    background: url("../images/index/recommend.png") no-repeat;
+}
+
+.recommend i {
+    font: bold normal 16px "Microsoft Yahei", "宋体";
+    color: #000;
+}
+
+.hover-color, .news-info-wrap li a:hover, .shishen-con-tab a:hover {
+    color: #cea441;
+}
+
+.news-info-wrap .recommend a:hover {
+    color: #666;
+}
+
+/*式神、主角介绍*/
+.main-pingan {
+    width: 100%;
+    height: 600px;
+    background: url("../images/index/side_left_qiu.jpg") center 105px no-repeat;
+}
+
+.pingan-wrap {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/*平安之旅选项卡*/
+.pingan-tab {
+    margin-bottom: 80px;
+}
+
+.pingan {
+    width: 130px;
+    height: 69px;
+    background-position: -884px -1314px;
+}
+
+.link-line {
+    margin: 34px 10px 0;
+    width: 44px;
+    height: 4px;
+    background-position: -1479px -377px;
+}
+
+.shishen, .zhujue {
+    position: relative;
+}
+
+.shishen span, .zhujue span {
+    margin: 16px;
+    width: 70px;
+    height: 35px;
+    background-position: -1329px -719px;
+}
+
+.hover-bg {
+    position: absolute;
+    top: 10px;
+    width: 96px;
+    height: 90px;
+    background-position: -1593px -196px;
+    opacity: 0;
+    z-index: -1;
+}
+
+.zhujue span {
+    background-position: -1639px -909px;
+}
+
+.pingan-tab a i.active {
+    top: 0;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.pingan-tab a:hover i {
+    top: 0;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+/*式神主角显示区*/
+.pingan-con {
+    width: 68%;
+}
+
+/*式神介绍*/
+.shishen-con-tab {
+    height: 40px;
+    border-bottom: 1px dotted #000;
+}
+
+.shishen-con-tab a {
+    float: left;
+    margin-right: 25px;
+    font: bold 18px "Microsoft JhengHei", 'Microsoft Yahei';
+}
+
+.allgod {
+    margin-left: 10px;
+    width: 131px;
+    height: 29px;
+    background: url("../images/index/all_god.png") no-repeat;
+}
+
+.shishen-con-show {
+    position: relative;
+    margin-top: 35px;
+}
+
+/*左右切换列表按钮*/
+.onleft, .onright {
+    position: absolute;
+    top: 88px;
+    width: 42px;
+    height: 33px;
+    z-index: 1;
+}
+
+.onleft {
+    display: none;
+    left: -35px;
+    background-position: -1640px -1138px;
+}
+
+.onleft:hover {
+    background-position: -1640px -1105px;
+}
+
+.onright {
+    right: -12px;
+    background-position: -1640px -1025px;
+}
+
+.onright:hover {
+    background-position: -1640px -1058px;
+}
+
+.shishen-visible {
+    overflow: hidden;
+    position: relative;
+    width: 820px;
+    height: 210px;
+}
+
+/*所有式神列表*/
+.shishen-box-all {
+    width: 5000px;
+    transition: .5s;
+}
+
+.shishen-box-all ul {
+    float: left;
+    padding: 0 21px 0;
+    border-right: 1px solid #95a7a4;
+}
+
+.shishen-box-all li {
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+/*式神列表*/
+.shishen-box-all .shishen-last {
+    border-right: none;
+}
+
+.shishen-box-all .shishen-name {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: 15px;
+    line-height: 90px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.shishen-box-all li:hover .shishen-name {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.shishen-box-all a {
+    position: relative;
+    width: 87px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.shishen-box-all a i {
+    position: absolute;
+    top: -3px;
+    right: -10px;
+    width: 31px;
+    height: 36px;
+    background: url("../images/index/new.png");
+}
+
+.shishen-box {
+    float: left;
+    width: 820px;
+}
+
+.shishen-item1 {
+    background-image: url("../images/index/ss1_shuweng.png");
+}
+
+.shishen-item2 {
+    background-image: url("../images/index/ss2_tuwan.png");
+}
+
+.shishen-item3 {
+    background-image: url("../images/index/ss3_xiaosongwan.png");
+}
+
+.shishen-item4 {
+    background-image: url("../images/index/ss4_bianhua.png");
+}
+
+.shishen-item5 {
+    background-image: url("../images/index/ss5_shaonv.png");
+}
+
+.shishen-item6 {
+    background-image: url("../images/index/ss6_xiao.png");
+}
+
+.shishen-item7 {
+    background-image: url("../images/index/ss7_yijin.png");
+}
+
+.shishen-item8 {
+    background-image: url("../images/index/ss8_huang.png");
+}
+
+.shishen-item9 {
+    background-image: url("../images/index/ss9_wannianzhu.png");
+}
+
+.shishen-item10 {
+    background-image: url("../images/index/ss10_jinyuji.png");
+}
+
+.shishen-item11 {
+    background-image: url("../images/index/ss11_qingfangzhu.png");
+}
+
+.shishen-item12 {
+    background-image: url("../images/index/ss12_gulonghuo.png");
+}
+
+.shishen-item13 {
+    background-image: url("../images/index/ss13_yecha.png");
+}
+
+.shishen-item14 {
+    background-image: url("../images/index/ss14_heitongzi.png");
+}
+
+.shishen-item15 {
+    background-image: url("../images/index/ss15_baitongzi.png");
+}
+
+.shishen-item16 {
+    background-image: url("../images/index/ss16_huaniaojuan.png");
+}
+
+.shishen-item17 {
+    background-image: url("../images/index/ss17_yanyanluo.png");
+}
+
+.shishen-item18 {
+    background-image: url("../images/index/ss18_huiyeji.png");
+}
+
+.shishen-item19 {
+    background-image: url("../images/index/ss19_taohuayao.png");
+}
+
+.shishen-item20 {
+    background-image: url("../images/index/ss20_xuenv.png");
+}
+
+.shishen-item21 {
+    background-image: url("../images/index/ss21_sanweihu.png");
+}
+
+.shishen-item22 {
+    background-image: url("../images/index/ss22_hongdenglong.png");
+}
+
+.shishen-item23 {
+    background-image: url("../images/index/ss23_zuofutongzi.png");
+}
+
+.shishen-item24 {
+    background-image: url("../images/index/ss24_liyujing.png");
+}
+
+/*主角介绍*/
+/*主角选项卡*/
+.zhujue-con-tab {
+    width: 140px;
+}
+
+.zhujue-tab {
+    position: relative;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+}
+
+.zhujue-con-tab li:hover {
+    background-color: #fff;
+    border-color: #000;
+}
+
+.zhujue-con-tab a {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.zhujue-con-tab span {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: -12px;
+    border: 5px solid transparent;
+    border-left-color: #000;
+    border-right: none;
+}
+
+.zhujue-con-tab li:hover span {
+    display: block;
+}
+
+/*默认显示*/
+.zhujue-hover {
+    background-color: #fff;
+    border-color: #000;
+}
+
+.zhujue-hover span {
+    display: block;
+}
+
+/*主角详情介绍*/
+.zhujue-info-visible {
+    position: relative;
+    width: 605px;
+}
+
+.zhujue-box {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 605px;
+}
+
+.show {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    z-index: 3;
+}
+
+.zhujue-info-visible img {
+    margin: -43px 35px 0 0;
+}
+
+.zhujue-info-visible span {
+    margin-bottom: 10px;
+    width: 38px;
+    height: 23px;
+}
+
+.zhujue-info-visible h3 {
+    margin-bottom: 2px;
+    width: 227px;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #000;
+}
+
+.zhujue-info-visible p {
+    margin-bottom: 19px;
+    padding-top: 5px;
+    width: 227px;
+    font-size: 14px;
+    line-height: 22px;
+    border-top: 1px solid #000;
+    color: #333;
+}
+
+.zhujue-info-visible a {
+    width: 55px;
+    height: 43px;
+    background-position: -1640px -865px;
+}
+
+.zhujue-info {
+    padding-top: 40px;
+}
+
+.num1 {
+    background-position: -1359px -785px;
+}
+
+.num2 {
+    background-position: -1359px -808px;
+}
+
+.num3 {
+    background-position: -1359px -831px;
+}
+
+.num4 {
+    background-position: -1359px -762px;
+}
+
+/*攻略*/
+.main-strategy {
+    margin-bottom: 55px;
+    width: 100%;
+}
+
+.strategy {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/*搜索框*/
+.strategy-search-text {
+    width: 315px;
+    height: 42px;
+    font-size: 15px;
+    text-indent: 12px;
+    outline: none;
+    border: 2px solid #000;
+}
+
+.strategy-search-btn {
+    margin-left: -6px;
+    width: 58px;
+    height: 58px;
+    background-position: -1640px -705px;
+    vertical-align: bottom;
+    border: none;
+    cursor: pointer;
+}
+
+.strategy-search-btn:hover {
+    background-position: -1640px -625px;
+}
+
+.strategy-wrap {
+    margin-top: 12px;
+}
+
+/*攻略区轮播图*/
+.strategy-banner-part {
+    padding-bottom: 12px;
+    width: 368px;
+    border: 2px solid #000;
+}
+
+.strategy-banner-visible {
+    overflow: hidden;
+    width: 100%;
+    height: 228px;
+}
+
+.strategy-banner-box {
+    width: 736px;
+    height: 100%;
+    -webkit-transition: margin-left .5s ease-in-out;
+    -moz-transition: margin-left .5s ease-in-out;
+    -ms-transition: margin-left .5s ease-in-out;
+    -o-transition: margin-left .5s ease-in-out;
+    transition: margin-left .5s ease-in-out;
+}
+
+.strategy-banner-btn {
+    text-align: center;
+}
+
+.strategy-banner-btn a {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 4px solid #000;
+    border-radius: 50%;
+}
+
+.strategy-banner-btn a:hover {
+    background-color: #000;
+}
+
+/*攻略区轮播图按钮样式*/
+.strategy-on {
+    background-color: #000;
+}
+
+/*攻略区导航*/
+.strategy-nav a {
+    display: inline-block;
+    padding-left: 32px;
+    height: 150px;
+}
+
+.strategy-nav a span {
+    width: 24px;
+    height: 134px;
+}
+
+.strategy-nav a i {
+    float: right;
+    margin-left: 20px;
+    width: 11px;
+    height: 150px;
+    background-position: -1279px -315px;
+}
+
+.xitong {
+    background-position: -1344px -315px;
+}
+
+.mengxin {
+    background-position: -1368px -315px;
+}
+
+.xuanshang {
+    background-position: -1307px -466px;
+}
+
+.baodatui {
+    background-position: -1320px -315px;
+}
+
+.strategy-nav a:hover span {
+    margin-top: -10px;
+}
+
+/*攻略资讯*/
+.strategy-info-part {
+    width: 790px;
+}
+
+/*攻略资讯选项卡*/
+.strategy-info-tab {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.strategy-info-tab a i.on {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: 0;
+}
+.strategy-info-tab a i.on {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: 0;
+}
+
+.strategy-info-tab .link-line {
+    margin-top: 49px;
+}
+
+.xinshou, .ss, .douji, .wanfa {
+    position: relative;
+    margin-top: 15px;
+}
+
+.gonglue {
+    width: 134px;
+    height: 85px;
+    background-position: -1479px -292px;
+}
+
+/*默认显示*/
+.xinshou > span {
+    margin: 15px;
+    width: 68px;
+    height: 39px;
+    background-position: -1640px -986px;
+}
+
+.ss > span {
+    margin: 25px 0 0 12px;
+    width: 71px;
+    height: 31px;
+    background-position: -1325px -995px;
+}
+
+.douji > span {
+    margin: 19px 0 0 14px;
+    width: 75px;
+    height: 38px;
+    background-position: -1251px -993px;
+}
+
+.wanfa > span {
+    margin: 24px 0 0 8px;
+    width: 80px;
+    height: 31px;
+    background-position: -661px -1166px;
+}
+
+/*攻略资讯内容*/
+.strategy-info-con {
+    overflow: hidden;
+    padding-top: 35px;
+}
+
+.strategy-info-wrap {
+    width: 4250px;
+    -webkit-transition: margin-left .5s ease-in-out;
+    -moz-transition: margin-left .5s ease-in-out;
+    -ms-transition: margin-left .5s ease-in-out;
+    -o-transition: margin-left .5s ease-in-out;
+    transition: margin-left .5s ease-in-out;
+}
+
+.strategy-info-wrap ul {
+    width: 850px;
+}
+
+.strategy-info-wrap li {
+    float: left;
+    margin-right: 53px;
+    padding-bottom: 6px;
+    width: 370px;
+    border-bottom: 1px dotted #000;
+}
+
+.strategy-info-wrap p {
+    position: relative;
+    padding-top: 6px;
+}
+
+.strategy-info-wrap i {
+    position: absolute;
+    top: 11px;
+    border-left: 7px solid #333;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.strategy-info-wrap span {
+    overflow: hidden;
+    font-size: 14px;
+    text-indent: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.strategy-info-wrap li:hover span {
+    color: #cea441;
+}
+
+.strategy-info-wrap em {
+    font-size: 14px;
+    font-style: normal;
+    text-indent: 14px;
+    color: #ccc;
+}
+
+/*同人专区*/
+.main-tongren {
+    margin-bottom: 52px;
+    width: 100%;
+}
+
+.tongren-wrap {
+    margin: 0 auto;
+    width: 1220px;
+}
+
+/*同人专区选项卡*/
+.tongren-tab {
+    overflow: hidden;
+    margin-bottom: 55px;
+}
+
+.tongren {
+    margin-right: 20px;
+    width: 112px;
+    height: 106px;
+    background-position: -906px -872px;
+}
+
+.tongren-tab li {
+    float: left;
+    padding-bottom: 20px;
+    width: 155px;
+    height: 58px;
+    border-bottom: 2px solid #000;
+}
+
+.tongren-tab a {
+    position: relative;
+    width: 100%;
+    height: 58px;
+    border-right: 1px dotted #000;
+}
+
+.tongren-tab span {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 72px;
+    height: 18px;
+}
+
+.tongren-tab div.on span {
+    top: 0;
+}
+
+.tuijian span {
+    background-position: -1008px -790px;
+}
+
+.huihua span {
+    background-position: -208px -666px;
+}
+
+.cos span {
+    background-position: -1008px -808px;
+}
+
+.shiping span {
+    background-position: -1008px -826px;
+}
+
+.xiaoshuo span {
+    background-position: -1008px -844px;
+}
+
+.gaoshou span {
+    width: 88px;
+    background-position: -1218px -1291px;
+}
+
+.tongren-tab .tougao {
+    top: 30px;
+    left: 40px;
+    width: 101px;
+    height: 24px;
+    background-position: -406px -1410px;
+    border-right: none;
+}
+
+.tongren-tab i {
+    visibility: hidden;
+    position: absolute;
+    top: 78px;
+    left: 40px;
+    width: 70px;
+    height: 54px;
+    background: url("../images/index/tongren_icon.png") no-repeat;
+}
+
+.tongren-tab div.on i {
+    visibility: visible;
+    top: 27px;
+}
+
+.tuijian i {
+    background-position: -50px 0;
+}
+
+.huihua i {
+    background-position: -205px 0;
+}
+
+.cos i {
+    background-position: -360px 0;
+}
+
+.shiping i {
+    background-position: -518px 0;
+}
+
+.xiaoshuo i {
+    left: 42px;
+    background-position: -670px 0;
+}
+
+.gaoshou i {
+    left: 51px;
+    background-position: -965px 0;
+}
+
+.tougao:hover {
+    left: 50px;
+}
+
+/*同人内容*/
+.tongren-con-visible {
+    overflow: hidden;
+}
+
+.tongren-con-wrap {
+    width: 7320px;
+    -webkit-transition: margin-left .5s ease-in-out;
+    -moz-transition: margin-left .5s ease-in-out;
+    -ms-transition: margin-left .5s ease-in-out;
+    -o-transition: margin-left .5s ease-in-out;
+    transition: margin-left .5s ease-in-out;
+}
+
+.tongren-con-wrap ul {
+    width: 1220px;
+}
+
+.tongren-con-wrap li {
+    float: left;
+    margin: 0 9px 10px;
+    width: 285px;
+    height: 200px;
+}
+
+.tongren-con-wrap a {
+    position: relative;
+    width: 100%;
+    height: 163px;
+}
+
+.tongren-con-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.tongren-con-wrap span {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.tongren-con-wrap i {
+    margin: 35px auto;
+    width: 79px;
+    height: 93px;
+    background-position: -1424px -196px;
+}
+
+.tongren-con-wrap li:hover span {
+    opacity: 1;
+}
+
+.tongren-con-wrap p {
+    overflow: hidden;
+    padding-top: 10px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #666;
+}
+
+/*视频壁纸*/
+.main-shitu {
+    width: 100%;
+    height: 514px;
+    margin-bottom: 65px;
+    background: url("../images/index/bg_video.jpg") 0 0 no-repeat;
+}
+
+.shitu-wrap {
+    margin: auto;
+    padding-top: 55px;
+    width: 1200px;
+}
+
+.shitu-vedio, .shitu-bizhi {
+    width: 580px;
+}
+
+.shitu-wrap a {
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    width: 270px;
+    height: 200px;
+}
+
+.shitu-wrap img {
+    width: 100%;
+    height: 154px;
+    display: block;
+    vertical-align: bottom;
+}
+
+.shitu-wrap p {
+    overflow: hidden;
+    width: 100%;
+    line-height: 46px;
+    background-color: #fff;
+    font-size: 14px;
+    text-indent: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.shitu-wrap .shiiping-tit, .shitu-wrap .bizhi-tit {
+    margin: 0 53px 62px 0;
+    width: 227px;
+    height: 148px;
+    background-position: -1078px -466px;
+}
+
+.shitu-wrap .bizhi-tit {
+    background-position: -1101px -614px;
+}
+
+.shitu-bizhi p {
+    background: transparent;
+    color: #666;
+}
+
+.shitu-wrap a:hover img {
+    transform: scale(1.1);
+}
+
+/*活动专区*/
+.main-activity {
+    width: 100%;
+}
+
+.activity-wrap {
+    margin: auto;
+    width: 1270px;
+}
+
+.activity-title {
+    margin-right: 37px;
+    width: 257px;
+    height: 370px;
+    background: url("../images/index/activity.png") 0 0 no-repeat;
+}
+
+.activity-con {
+    width: 965px;
+    margin-bottom: 35px;
+}
+
+.activity-con li {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin: 0 25px 37px;
+}
+
+.activity-con span {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.activity-con li:hover img {
+    transform: scale(1.1);
+}
+
+/*底部二维码*/
+.main-code {
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+.code-wrap {
+    position: relative;
+    margin: auto;
+    width: 1200px;
+}
+
+.logo-bottom {
+    margin-right: 105px;
+    width: 68px;
+    height: 227px;
+    background: url("../images/logo_bottom.png") 0 0 no-repeat;
+}
+
+.code-wb, .code-wx, .code-server {
+    position: relative;
+    margin-right: 129px;
+    width: 250px;
+    height: 180px;
+}
+
+.code-wrap .wb-tit {
+    width: 24px;
+    height: 96px;
+    background-position: -1402px -197px;
+}
+
+.code-wrap .wx-tit {
+    width: 24px;
+    height: 119px;
+    background-position: -1331px -466px;
+}
+
+.code-wb .txt {
+    margin-top: 42px;
+}
+
+.code-wx .txt {
+    margin-top: 25px;
+}
+
+.code-wrap p {
+    float: left;
+    width: 27px;
+    font-size: 18px;
+    line-height: 17px;
+}
+
+.code-wrap img {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    padding: 15px;
+    width: 132px;
+    height: 132px;
+    border: 1px solid #ccc;
+}
+
+.link-name {
+    margin-top: 42px;
+    font-size: 14px;
+}
+
+.link-name span {
+    padding-top: 5px;
+    border-top: 2px solid #ccc;
+}
+
+.link-name a {
+    color: #d2c199;
+}
+
+/*客户服务*/
+.code-server {
+    padding-top: 66px;
+    width: 140px;
+}
+
+.server {
+    position: absolute;
+    top: -20px;
+    width: 111px;
+    height: 109px;
+    background-position: -541px -474px;
+}
+
+.code-server p {
+    width: 100%;
+    font-size: 14px;
+}
+
+.code-server .tel {
+    margin-bottom: 33px;
+    font: 20px Georgia, "Microsoft Yahei";
+}
+
+.server-wrap .link-name a {
+    padding-right: 10px;
+    color: #dbbe7c;
+}
+
+.server-wrap .link-name a:hover {
+    text-decoration: underline;
+}
+
+/*返回顶部*/
+.back-top {
+    position: absolute;
+    right: -48px;
+    top: 38px;
+    width: 25px;
+    height: 111px;
+    background-position: -1355px -467px;
+}
+
+.back-top:hover {
+    top: 20px;
+}
+
+/*阴阳师远不止这些*/
+.main-more {
+    overflow: hidden;
+    margin-bottom: 25px;
+    padding-top: 124px;
+    width: 100%;
+    height: 400px;
+    background: url("../images/index/bg_foot_qiu.jpg") 0 0 no-repeat;
+}
+
+.more-title {
+    margin: auto;
+    width: 591px;
+    height: 29px;
+    background-position: -743px -1166px;
+}
+
+.more-con {
+    position: relative;
+    margin: 50px auto;
+    width: 330px;
+    height: 380px;
+}
+
+.more-con span {
+    margin: auto;
+    width: 116px;
+    height: 23px;
+    background-position: -507px -1410px;
+}
+
+.more-con i {
+    margin: 30px auto 0;
+    width: 22px;
+    height: 76px;
+    background-position: -1639px -379px;
+}
+
+.more-con em {
+    margin: 0 auto 0;
+    width: 210px;
+    height: 319px;
+    background-position: 0 -375px;
+}
+
+/*游戏二维码*/
+.more-code-wrap {
+    opacity: 0;
+    position: absolute;
+    top: 55px;
+    left: 92px;
+    width: 197px;
+    height: 152px;
+}
+
+.more-code-wrap img {
+    width: 152px;
+    height: 100%;
+}
+
+.more-code-wrap p {
+    float: right;
+    width: 16px;
+    height: 150px;
+    background-position: -1290px -315px;
+}
+
+/*鼠标悬浮*/
+.more-con:hover span {
+    opacity: 0;
+}
+
+.more-con:hover i {
+    margin-top: -40px;
+}
+
+.more-con:hover .more-code-wrap {
+    opacity: 1;
+    top: 25px;
+}
+
+.more-con:hover em {
+    margin-top: 140px;
+}
+
+/*分享*/
+.main-share {
+    width: 100%;
+}
+
+.share-wrap {
+    margin: auto;
+    width: 460px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #de7f7f;
+}
+
+.iconfont {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.share-wrap a {
+    margin-right: 10px;
+}
+
+.share-wrap a:hover {
+    color: #c9b27c;
+}

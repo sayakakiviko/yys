@@ -1,0 +1,519 @@
+#nav .nav-content .list-top .catalog > i, .game-1st, .game-hot, .game-new, .newease-game {
+    background: url("../images/nav/hot.png") no-repeat;
+}
+
+/*nav start*/
+#nav {
+    position: relative;
+    background-color: #fbfbfb;
+    height: 55px;
+    z-index: 1;
+}
+
+#nav .nav-content {
+    margin: 0 auto;
+    width: 65%;
+    height: 100%;
+}
+
+#nav .nav-content .n-game-logo {
+    display: block;
+    margin-top: 5px;
+    background-image: url("../images/netease_game_big.png");
+    width: 133px;
+    height: 44px;
+}
+
+/*游戏推广栏*/
+#nav .nav-content .topBar {
+    margin-left: 10px;
+    background-image: url("../images/nav/zmq.jpg");
+    width: 420px;
+    height: 55px;
+}
+
+#nav .nav-content .topBar .topBar-hover {
+    display: none;
+    margin: 55px 0 0 -150px;
+    width: 920px;
+}
+
+#nav .nav-content .topBar:hover .topBar-hover {
+    display: block;
+}
+
+#nav .nav-content .topBar:hover {
+    background-image: none;
+}
+
+/*导航栏右侧*/
+#nav .nav-content .list-top {
+    width: 400px;
+    height: 100%;
+}
+
+#nav .nav-content .list-top > li {
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+}
+
+#nav .nav-content .list-top > li:hover {
+    background-color: #f5f5f5;
+    border-bottom: 3px solid #bc2e2e;
+}
+
+#nav .nav-content .list-top > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 55px;
+}
+
+#nav .nav-content .list-top > li:hover > a {
+    color: #bc2e2e;
+}
+
+#nav .nav-content .list-top .reg, #nav .nav-content .list-top .chongzhi {
+    width: 75px;
+}
+
+#nav .nav-content .list-top .catalog, #nav .nav-content .list-top .scoll-bar {
+    width: 125px;
+    line-height: 3.3em;
+}
+
+#nav .nav-content .list-top .scoll-bar {
+    overflow: hidden;
+    position: relative;
+}
+
+#nav .nav-content .list-top .scoll-bar a {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    position: absolute;
+    top: 0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+#nav .nav-content .list-top .catalog > span {
+    color: #bc2e2e;
+    line-height: 55px;
+}
+
+#nav .nav-content .list-top .catalog > i {
+    margin: 24px 6px 0 0;
+    background-position: -100px -100px;
+    width: 16px;
+    height: 16px;
+}
+
+/*游戏下拉菜单*/
+#nav .list-catalog-menu {
+    overflow: hidden; /*必须加上才能实现卷轴拉开效果*/
+    margin-left: -1010px;
+    background-color: #fdfefe;
+    width: 1260px;
+    height: 0;
+    font-size: 12px;
+    text-align: left;
+    color: #666;
+}
+
+#nav .nav-content .list-top .catalog:hover .list-catalog-menu {
+    position: relative;
+    z-index: -1;
+    height: 500px;
+    /*过渡效果为高度，效果时长0.5秒*/
+    -webkit-transition: height .5s ease-in-out;
+    -moz-transition: height .5s ease-in-out;
+    -ms-transition: height .5s ease-in-out;
+    -o-transition: height .5s ease-in-out;
+    transition: height .5s ease-in-out;
+}
+
+#nav .list-catalog-menu p {
+    line-height: 20px;
+    font-weight: bold;
+}
+
+#nav .list-catalog-menu li {
+    width: 125px;
+    margin-left: 15px;
+}
+
+#nav .list-game-phone ul.list-game-menu {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 950px;
+    background: #fff;
+    -webkit-transition: left .5s ease-in-out;
+    -moz-transition: left .5s ease-in-out;
+    -ms-transition: left .5s ease-in-out;
+    -o-transition: left .5s ease-in-out;
+    transition: left .5s ease-in-out;
+}
+
+#nav .list-game-menu li i {
+    margin-top: 3px;
+    width: 20px;
+    height: 10px;
+}
+
+#nav .list-catalog-menu a {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#nav .list-game-menu-title {
+    background-color: rgba(235, 235, 238, .85);
+    width: 110%;
+    height: 40px;
+    font: bold 14px "微软雅黑", "宋体";
+    text-align: left;
+    text-indent: 1em;
+    line-height: 40px;
+    color: #bc2e2e;
+}
+
+/*游戏名字体样式*/
+#nav .list-game-menu a {
+    display: block;
+    margin-top: 12px;
+    height: 14px;
+    font: 12px "微软雅黑", "宋体";
+    color: #666;
+}
+
+#nav .list-catalog-menu .list-game-menu li a:hover {
+    color: #bc2e2e;
+}
+
+/*hot new 小图标*/
+.game-1st {
+    background-position: -95px -277px;
+}
+
+.game-hot {
+    background-position: -95px -151px;
+}
+
+.game-new {
+    background-position: -95px -214px;
+}
+
+#nav .list-catalog-menu .not-icon {
+    width: 100px;;
+}
+
+#nav .list-catalog-menu .hide {
+    display: none;
+}
+
+#nav .list-catalog-menu li.rpg-hide {
+    padding-top: 20px;
+}
+
+#nav .list-game-pc .list-game-menu .sports {
+    position: absolute;
+    top: 41px;
+    left: 140px;
+    width: 145px;
+    background-color: #fdfefe;
+    -webkit-transition: left .5s ease-in-out;
+    -moz-transition: left .5s ease-in-out;
+    -ms-transition: left .5s ease-in-out;
+    -o-transition: left .5s ease-in-out;
+    transition: left .5s ease-in-out;
+}
+
+/*更多游戏按钮*/
+#nav .list-catalog-menu .game-more {
+    position: absolute;
+    padding: 5px 5px;
+    background-color: #be3737;
+    width: 20px;
+    height: 100px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+#nav .list-catalog-menu .game-more:hover, #nav .list-catalog-menu .list-game-menu li a.game-more:hover {
+    opacity: .75;
+    filter: alpha(opacity=75);
+    color: #fff;
+}
+
+#nav .list-game-pc .game-more {
+    margin: -160px 0 0 115px;
+}
+
+#nav .list-game-phone .game-more {
+    top: 50%;
+    right: 0;
+    z-index: 2;
+    margin-top: -85px;
+    line-height: 16px;
+}
+
+/*客户端游戏*/
+#nav .list-game-pc {
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid #eae9eb;
+}
+
+#nav .list-game-pc ul {
+    position: relative;
+}
+
+#nav .sports i.game-new {
+    margin-right: 38px;
+}
+
+/*手机游戏*/
+#nav .list-game-phone {
+    position: relative;
+    width: 820px;
+    height: 500px;
+    border-right: 1px solid #eae9eb;
+}
+
+#nav .list-game-phone .recommend-hot {
+    padding-right: 5px;
+    height: 100%;
+    border-right: 1px solid #eae9eb;
+}
+
+.long-news p {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+/*游戏辅助*/
+#nav .list-game-tool {
+    position: relative;
+    z-index: 2;
+    width: 130px;
+    height: 100%;
+    background-color: #fff;
+    border-left: 1px solid #eae9eb;
+}
+
+#nav .list-game-tool .tool {
+    margin-top: 5px;
+    width: 115px;
+}
+
+#nav .list-game-tool a.newease-game {
+    background-position: 0 -338px;
+    height: 18px;
+    text-indent: 2em;
+    color: #be3737;
+}
+
+/*右侧导航栏*/
+.nav-item {
+    padding: 40px 40px 0 40px;
+    color: #fff;
+}
+
+.nav-item li {
+    position: relative;
+    float: left;
+    width: 110px;
+    height: 60px;
+    color: inherit;
+    cursor: pointer;
+}
+
+.nav-item li a {
+    font-size: 16px;
+    color: inherit;
+}
+
+.nav-item li:hover a {
+    color: #bc2e2e;
+}
+
+.nav-item li span {
+    position: absolute;
+    top: 0;
+    left: 75px;
+    height: 24px;
+    width: 15px;
+    background-position: -1689px -196px;
+}
+
+.nav-item .ssl, .nav-item .zjl {
+    display: none;
+}
+
+.show-more-top {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+/*官方渠道列表*/
+.show-more-bottom {
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    z-index: 10;
+    width: 100%;
+    height: 0;
+    background-color: #e1ebeb;
+    -webkit-transition: height .3s linear;
+    -moz-transition: height .3s linear;
+    -ms-transition: height .3s linear;
+    -o-transition: height .3s linear;
+    transition: height .3s linear;
+}
+
+.list-qudao {
+    float: right;
+    width: 1150px;
+    margin: 32px 70px 0 0;
+}
+
+.list-qudao li {
+    width: 215px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+.list-qudao li p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.list-qudao li a {
+    width: 100%;
+    height: 100%;
+}
+
+.list-qudao li a i {
+    width: 80px;
+    height: 70px;
+    background-repeat: no-repeat;
+}
+
+.list-qudao li img {
+    width: 84px;
+    height: 84px;
+    border: 2px solid #666;
+    border-radius: 7px;
+}
+
+.bbs-box, .baidu-box {
+    margin: auto;
+    padding: 0 20px;
+    width: 80px;
+}
+
+.bbs {
+    background-position: -832px -608px;
+}
+
+.list-qudao li a .baidu {
+    width: 81px;
+    background-position: -983px -608px;
+}
+
+.list-qudao .p-tit, .list-qudao .p-tit-sub {
+    margin: auto;
+}
+
+.list-qudao .p-tit-sub {
+    display: none;
+}
+
+.luntan a:hover, .tieba a:hover {
+    margin-top: -10px;
+}
+
+.weibo:hover .p-tit, .weixin:hover .p-tit {
+    display: none;
+}
+
+/*QQ群*/
+.list-qudao .qq1, .list-qudao .qq2 {
+    margin-left: 25px;
+    width: 115px;
+    text-align: left;
+    border: none;
+    color: #666;
+}
+
+.qq1 span, .qq2 span {
+    margin-top: 8px;
+}
+
+.list-qudao .qq-team {
+    margin: -15px 100px 0 0;
+    width: 75px;
+    font-size: 15px;
+    border: none;
+}
+
+/*左侧顶部游戏面板*/
+.left-part {
+    display: none;
+    padding: 10px 0 0 15px;
+    width: 380px;
+    height: 75px;
+}
+
+.left-part > p {
+    margin: -4px 10px 0 0;
+    width: 15px;
+    font-size: 15px;
+}
+
+.left-part > img {
+    width: 75px;
+    height: 75px;
+}
+
+.left-part span {
+    margin: auto 15px;
+    height: 75px;
+    border-left: 1px solid #999;
+}
+
+.game-name {
+    width: 240px;
+}
+
+.game-name img {
+    margin-right: 20px;
+}
+
+.game-name h3 {
+    font: bold 30px "Microsoft Yahei", "宋体";
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+.game-name p {
+    margin-top: 5px;
+    font-size: 15px;
+}
