@@ -1,9 +1,43 @@
 /*底部*/
-#foot {
-    margin-top: 15px;
+#footer {
     width: 100%;
 }
 
+/*分享*/
+.main-share {
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.share-wrap {
+    margin: auto;
+    width: 460px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #de7f7f;
+}
+
+.iconfont {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.icon-yixin{
+    position: relative;
+    bottom: 2px;
+}
+
+.share-wrap a {
+    margin-right: 10px;
+}
+
+.share-wrap a:hover {
+    color: #c9b27c;
+}
+
+/*链接*/
 .foot-wrap {
     margin: auto;
     width: 840px;
@@ -24,7 +58,7 @@
     line-height: 26px;
 }
 
-.jianhu {
+.parent {
     width: 142px;
     line-height: 26px;
     background-color: #610000;
@@ -36,6 +70,6 @@
     margin: 5px auto;
 }
 
-#foot a:hover {
+.foot-nav a:hover {
     text-decoration: underline;
 }

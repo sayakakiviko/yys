@@ -224,10 +224,8 @@ window.onload = function () {
             };
         })(i);
     }
-})();
 
-/*攻略区*/
-(function () {
+    /*攻略区*/
     //攻略区轮播
     banner(368, "strategy-on", document.getElementsByClassName("strategy-banner-box")[0], document.getElementsByClassName("strategy-banner-btn")[0].getElementsByTagName("a"));
     //攻略区tab选项卡

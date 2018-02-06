@@ -4,6 +4,7 @@ body, div, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, input, 
 }
 
 body {
+    position: relative;
     font: 12px "Microsoft Yahei", "Arial", sans-serif;
 }
 
@@ -21,6 +22,10 @@ a {
     color: inherit;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 input {
     outline: none;
 }
@@ -35,6 +40,14 @@ button {
 
 .none {
     display: none;
+}
+
+.r {
+    position: relative;
+}
+
+.a {
+    position: absolute;
 }
 
 .fl {

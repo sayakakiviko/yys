@@ -5,27 +5,27 @@
         oPhone = document.getElementById("game-phone"),//手游活动模块
         oHide = document.getElementsByClassName("hide")[0],//手游模块隐藏的列表
         oMenu = document.getElementsByClassName("catalog")[0],//目录
-        pc = aMore[0],//端游按钮
-        phone = aMore[1];//手游按钮
+        pcBtn = aMore[0],//端游按钮
+        phoneBtn = aMore[1];//手游按钮
 
     //每次移入重置
     oMenu.onmouseenter = function () {
         //端游重置
         oPc.style.cssText = "left:140px;z-index:0;";
-        pc.style.cssText = "top:280px;width:20px;height:100px;padding:5px 5px;";
-        pc.innerHTML = "更多热门端游";
-        pc.bool = false;
+        pcBtn.style.cssText = "top:280px;width:20px;height:100px;padding:5px 5px;";
+        pcBtn.innerHTML = "更多热门端游";
+        pcBtn.bool = false;
         //手游重置
         oPhone.style.cssText = "left:0;z-index:0;";
         oHide.style.display = "none";
-        phone.style.cssText = "top:250px;width:20px;height:100px;padding:5px 5px;";
-        phone.innerHTML = "更多热门手游";
-        phone.bool = false;
+        phoneBtn.style.cssText = "top:250px;width:20px;height:100px;padding:5px 5px;";
+        phoneBtn.innerHTML = "更多热门手游";
+        phoneBtn.bool = false;
     };
 
     //端游
-    pc.bool = false;//判断是否展开
-    pc.onclick = function () {
+    pcBtn.bool = false;//判断是否展开
+    pcBtn.onclick = function () {
         if (this.bool) {//如果已展开
             oPc.style.cssText = "left:140px;z-index:2;";
             setTimeout(function () {//动画效果结束之后再降层级
@@ -42,8 +42,8 @@
     };
 
     //手游
-    phone.bool = false;//判断是否展开
-    phone.onclick = function () {
+    phoneBtn.bool = false;//判断是否展开
+    phoneBtn.onclick = function () {
         if (this.bool) {//如果已展开
             oPhone.style.cssText = "left:0;z-index:0;";
             oHide.style.display = "none";
@@ -78,9 +78,7 @@
             clearTimeout(timer2);//清除定时器，以免造成页面卡顿
             timer2 = setTimeout(function () {
                 //最后从下向上滚动出现
-                oChild.style.opacity = "1";
-                oChild.style.top = "0";
-                oChild.style.filter = "alpha(opacity = 100)";
+                oChild.style.cssText = "opacity:1;filter:alpha(opacity = 100);top:0;";
             }, 300);
         }, 350);
         bool = !bool;

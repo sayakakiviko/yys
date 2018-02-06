@@ -2011,29 +2011,3 @@ body {
 .more-con:hover em {
     margin-top: 140px;
 }
-
-/*分享*/
-.main-share {
-    width: 100%;
-}
-
-.share-wrap {
-    margin: auto;
-    width: 460px;
-    font-size: 14px;
-    line-height: 20px;
-    color: #de7f7f;
-}
-
-.iconfont {
-    font-size: 20px;
-    vertical-align: middle;
-}
-
-.share-wrap a {
-    margin-right: 10px;
-}
-
-.share-wrap a:hover {
-    color: #c9b27c;
-}
